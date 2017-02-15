@@ -1,6 +1,6 @@
 Name:		i3status
 Version:	2.11
-Release:	1
+Release:	2
 Summary:	Generates a status line for dzen2 or wmii
 Group:		Graphical desktop/Other
 License:	MIT
@@ -40,7 +40,7 @@ mkdir -p %{buildroot}%{_sysconfdir}/
 install -Dpm 0644 %{name}.conf %{buildroot}%{_sysconfdir}/%{name}.conf
 
 %post
-%{_sbindir}/setcap cap_net_admin %{_bindir}/%{name}
+%{_sbindir}/setcap cap_net_admin=ep %{_bindir}/%{name}
 
 %files
 %doc LICENSE
