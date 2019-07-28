@@ -30,11 +30,12 @@ pseudo filesystem.
 #    -i Makefile
 
 %build
-%setup_compile_flags
-%make CC=%{__cc}
+autoreconf -fi
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 mkdir -p %{buildroot}%{_sysconfdir}/
 install -Dpm 0644 %{name}.conf %{buildroot}%{_sysconfdir}/%{name}.conf
