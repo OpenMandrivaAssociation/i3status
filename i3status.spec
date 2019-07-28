@@ -22,12 +22,12 @@ pseudo filesystem.
 %prep
 %setup -q
 
-sed \
-    -e 's|CFLAGS+=-Wall -Wshadow -Wpointer-arith -Wcast-qual -Wsign-compare|CFLAGS+=%{optflags} -Wshadow -Wpointer-arith -Wcast-qual -Wsign-compare|g' \
-    -e 's|CFLAGS+=-g|CFLAGS+=|g' \
-    -e 's|@echo " CC $<"|@echo " $(CC) $(CFLAGS) -c -o $@ $<"|g' \
-    -e 's|@echo " LD $@"|@echo " $(CC) -o $@ src/*.o *.o $(LDFLAGS)"|g' \
-    -i Makefile
+#sed \
+#    -e 's|CFLAGS+=-Wall -Wshadow -Wpointer-arith -Wcast-qual -Wsign-compare|CFLAGS+=%{optflags} -Wshadow -Wpointer-arith -Wcast-qual -Wsign-compare|g' \
+#    -e 's|CFLAGS+=-g|CFLAGS+=|g' \
+#    -e 's|@echo " CC $<"|@echo " $(CC) $(CFLAGS) -c -o $@ $<"|g' \
+#    -e 's|@echo " LD $@"|@echo " $(CC) -o $@ src/*.o *.o $(LDFLAGS)"|g' \
+#    -i Makefile
 
 %build
 %setup_compile_flags
