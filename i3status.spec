@@ -32,7 +32,8 @@ pseudo filesystem.
 
 %build
 autoreconf -fi
-%configure
+%configure \
+    --disable-sanitizers
 %make_build
 
 %install
