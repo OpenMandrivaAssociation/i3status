@@ -34,7 +34,7 @@ pseudo filesystem.
 autoreconf -fi
 %configure \
     --disable-sanitizers
-%make_build
+%make_build CPPFLAGS+="-U_FORTIFY_SOURCE"
 
 %install
 %make_install
