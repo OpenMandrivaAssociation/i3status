@@ -1,5 +1,5 @@
 Name:		i3status
-Version:	2.12
+Version:	2.13
 Release:	1
 Summary:	Generates a status line for dzen2 or wmii
 Group:		Graphical desktop/Other
