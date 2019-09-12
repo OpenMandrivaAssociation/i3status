@@ -13,6 +13,7 @@ BuildRequires:	pkgconfig(libnl-genl-3.0)
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(libpulse)
 BuildRequires:	pkgconfig(yajl)
+BuildRequires:  xmlto
 Requires(pre):	libcap-utils
 
 %description
