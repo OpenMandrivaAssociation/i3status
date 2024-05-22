@@ -21,7 +21,7 @@ i3status is a small program for filling dzen2 or wmii’s status bar via its 9P
 pseudo filesystem.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
