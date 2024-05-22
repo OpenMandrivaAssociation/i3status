@@ -31,8 +31,8 @@ pseudo filesystem.
 %install
 %meson_install
 
-mkdir -p %{buildroot}%{_sysconfdir}/
-install -Dpm 0644 %{name}.conf %{buildroot}%{_sysconfdir}/%{name}.conf
+#mkdir -p %{buildroot}%{_sysconfdir}/
+#install -Dpm 0644 %{name}.conf %{buildroot}%{_sysconfdir}/%{name}.conf
 
 %post
 %{_sbindir}/setcap cap_net_admin=ep %{_bindir}/%{name}
