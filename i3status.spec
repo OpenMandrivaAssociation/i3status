@@ -6,7 +6,7 @@ Group:		Graphical desktop/Other
 License:	MIT
 URL:		https://i3wm.org/%{name}
 Source0:	https://i3wm.org/%{name}/%{name}-%{version}.tar.xz
-BuildRequires:	libiw-devel
+#BuildRequires:	libiw-devel
 BuildRequires:	asciidoc
 BuildRequires:	pkgconfig(libconfuse)
 BuildRequires:	pkgconfig(libnl-genl-3.0)
