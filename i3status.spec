@@ -1,11 +1,11 @@
 Name:		i3status
-Version:	2.13
+Version:	2.14
 Release:	1
 Summary:	Generates a status line for dzen2 or wmii
 Group:		Graphical desktop/Other
 License:	MIT
-URL:		http://i3wm.org/%{name}
-Source0:	http://i3wm.org/%{name}/%{name}-%{version}.tar.bz2
+URL:		https://i3wm.org/%{name}
+Source0:	https://i3wm.org/%{name}/%{name}-%{version}.tar.xz
 BuildRequires:	libiw-devel
 BuildRequires:	asciidoc
 BuildRequires:	pkgconfig(libconfuse)
